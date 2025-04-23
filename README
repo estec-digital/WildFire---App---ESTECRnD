@@ -1,32 +1,41 @@
-Instruction to run code:
+# 🔥🔥🔥WildFire---SocSon
 
-============================================================
-Option 1: Run in Terminal with administrator privilage:
+### ✅Option 1: Run in Terminal with administrator privilage:
+```bash
+    python main.py config=${Absolute path to input.json file}
+```
+**Example:**  _python main.py config=D:\ChayRungProject\FireDetector\input.json_
 
-$ python main.py config=< Absolute path to input.json file>
+If not, you can run as default:  
+```bash
+    python main.py
+```
+Adjust variables inside: **input.json** file as you want.
 
-Ex: $ python main.py config=D:\ChayRungProject\FireDetector\input.json
-
-if not, you can run as default: $python main.py
-Adjust variables inside: input.json file as you want.
-
-======================================================
-Option 2: under development in Window OS
-Only for DEBUG mode service can run
-You can run by using service:
-1. Initialize service 
-	$ python AI_engine_service.py install
+### ⚙️Option 2: under development in Window OS
+Only for **DEBUG** mode service can run. You can run by using service:
+1. Initialize service
+```bash
+	python AI_engine_service.py install
+```
 2. Starting service
-	$ python AI_engine_service.py start 
+```bash
+	python AI_engine_service.py start 
+```
 3. Stop service
-	$ python AI_engine_service.py stop
+```bash
+	python AI_engine_service.py stop
+```
 4. Debug service 
-	$ python AI_engine_service.py debug
+```bash
+	python AI_engine_service.py debug
+```
 5. Remove service
-    $ python AI_engine_service.py remove
-
-5. Input variable or argument in file: "input.json" 
-
-=======================================================
-Kill all processes and background
-$ taskkill /f /im python.exe /t
+```bash
+    python AI_engine_service.py remove
+```
+6. Kill all processes and background
+```bash
+    taskkill /f /im python.exe /t
+```
+Input variable or argument in file: **input.json**
