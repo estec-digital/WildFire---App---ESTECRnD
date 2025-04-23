@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Page-1" id="fjMnKVXNaGP6IjeG0Aw4">
+    <mxGraphModel dx="948" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-12" target="NKiWoUgMI4WtK5r3R0fM-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-12" value="Update sensor data value by HOUR&lt;div&gt;main.py&amp;nbsp;&lt;/div&gt;&lt;div&gt;=&amp;gt; UpdateDataSensorByHour()&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="395.63" y="1170" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-14" target="NKiWoUgMI4WtK5r3R0fM-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-14" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span&gt;DBConnection.DataSensorupdateSQLByHour&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span&gt;=&amp;gt; updateDataSensorByHour&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;fontStyle=4;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="321.25" y="1270" width="358.75" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="501" y="1250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="1470" />
+              <mxPoint x="290" y="1250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-17" target="NKiWoUgMI4WtK5r3R0fM-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-17" value="Min time query &amp;gt;= 15 minutes&amp;nbsp;&lt;div&gt;or HOUR?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="375.63" y="1420" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-18" value="DONE" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="440.63" y="1640" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-20" target="NKiWoUgMI4WtK5r3R0fM-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-20" value="DataSensorCheck()&lt;div&gt;update value in SQL&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="395.63" y="1550" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-21" value="True" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="488.75" y="1520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-22" value="False" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1440" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

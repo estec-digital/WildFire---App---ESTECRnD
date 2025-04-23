@@ -1,0 +1,52 @@
+{
+    "project": "DuAnChayRung",
+    "sql_server_name": "192.168.54.39",
+    "sql_user_name": "administrator",
+    "sql_password": "Pass@work1",
+    "sql_database": "WFDS",
+
+    "camera_ip":"estecsocson.ddns.net:81",
+    "camera_user_name":"admin",
+    "camera_password":"Pass@work1",
+    "output_camera_folder":"D:\\EWFDS\\wwwroot\\img\\SocSon",
+  
+    "sms_sender": "+123456789",
+    "sms_receivers": [
+      "+123456789",
+      "+987654321"
+    ],
+  
+    "AI_trained_folder": "D:\\ChayRungProject\\FireDetector\\ModelLoader\\trained",
+    "AI_img_folder": "D:\\EWFDS\\wwwroot\\img\\SocSon\\ImgForAI",
+    "AI_save_result_folder": "D:\\EWFDS\\wwwroot\\img\\SocSon\\KetQuaAI",
+    "Augment_image_1":"D:\\EWFDS\\wwwroot\\img\\SocSon\\AugmentImage\\Aug_1",
+    "Augment_image_2":"D:\\EWFDS\\wwwroot\\img\\SocSon\\AugmentImage\\Aug_2",
+    "Augment_image_3":"D:\\EWFDS\\wwwroot\\img\\SocSon\\AugmentImage\\Aug_3",
+  
+    "SMS_account_SID": "AC6b482e2780acae679f85244029027169",
+    "SMS_auth_token": "a95743b79fc27cf04c2c41cb545f234f",
+  
+    "TELEGRAM_token": "6586171706:AAHvg6Ti1b3VFaS0o84_hlofcEiFnwS9dko",
+    "TeleChatID": "-1001877470123",
+  
+    "Email_sender": "userbugger91108@gmail.com",
+    "Email_password": "pyruarbcaphyxpif",
+    "Email_receivers": [
+      "tony.do.vh@gmail.com",
+      "quynhxm_2005@yahoo.com"    
+    ],
+  
+    "Notification_period": [
+      {
+        "start": 7,
+        "end": 17
+      }
+    ],
+
+    "log_data_sensor":"Logs/DATA_service.log",
+    "log_AI_engine":"AI_engine.log",
+  
+    "Soc_son_path_web": "D:\\EWFDS\\wwwroot\\img\\SocSon",
+    "Bang_tra_do_am": "D:\\ChayRungProject\\FireDetector\\DBConnection\\BangTraDoAm.csv"
+  }
+  

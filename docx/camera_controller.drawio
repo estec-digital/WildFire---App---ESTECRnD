@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Page-1" id="fjMnKVXNaGP6IjeG0Aw4">
+    <mxGraphModel dx="948" dy="2229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-2" target="NKiWoUgMI4WtK5r3R0fM-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-2" value="CAMERA control capture&lt;div&gt;(CameraController/camera.py)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="295" y="670" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-4" target="NKiWoUgMI4WtK5r3R0fM-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-4" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;u&gt;THREADS&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;1. Capture_loop&lt;div&gt;&amp;nbsp; &amp;nbsp; =&amp;gt; capture_loop()&lt;div&gt;2. Flask process&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; =&amp;gt; start_flask()&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="311.25" y="780" width="177.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-7" target="NKiWoUgMI4WtK5r3R0fM-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="960" />
+              <mxPoint x="260" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-7" value="Exit program?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="325" y="920" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-8" value="END" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1030" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-9" value="True" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1000" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-10" value="False" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="930" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

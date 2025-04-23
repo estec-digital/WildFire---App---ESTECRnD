@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Page-1" id="XE29dgyDpoKfKjnabyBy">
+    <mxGraphModel dx="948" dy="2229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hJ2gTuagNGfpi234rDKR-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hJ2gTuagNGfpi234rDKR-2" target="hJ2gTuagNGfpi234rDKR-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-2" value="Input Configuration&lt;div&gt;input.json&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hJ2gTuagNGfpi234rDKR-4" target="hJ2gTuagNGfpi234rDKR-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-4" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;u&gt;THREADS&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;1. Start CAMERA control capture&amp;nbsp;&lt;div&gt;&amp;nbsp; &amp;nbsp; =&amp;gt; start_camera_script()&lt;div&gt;2. Update sensor data value by HOUR&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; =&amp;gt; UpdateDataSensorByHour()&lt;/div&gt;&lt;div&gt;3. AI Engine detector fire&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; =&amp;gt; DetectFireInImages()&lt;/div&gt;&lt;/div&gt;&lt;div&gt;4. Auto remove old folder if longer than 30 days.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; =&amp;gt; delFolder()&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="220" width="295" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hJ2gTuagNGfpi234rDKR-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="450" />
+              <mxPoint x="220" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hJ2gTuagNGfpi234rDKR-7" target="hJ2gTuagNGfpi234rDKR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-7" value="Exit program?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="325" y="410" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-8" value="END" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="340" y="520" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-9" value="True" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ2gTuagNGfpi234rDKR-10" value="False" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="420" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

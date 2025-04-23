@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Page-1" id="fjMnKVXNaGP6IjeG0Aw4">
+    <mxGraphModel dx="948" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-24" target="NKiWoUgMI4WtK5r3R0fM-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-24" value="AI Engine detector&amp;nbsp;&lt;div&gt;main.py =&amp;gt; DetectFireInImages()&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="295.62" y="1770" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-26" target="NKiWoUgMI4WtK5r3R0fM-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-26" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;Load trained model: LoadTrainedModel.loadModel()&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b&gt;(main.py)&lt;/b&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="221.25" y="1860" width="358.75" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-29" target="NKiWoUgMI4WtK5r3R0fM-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="401" y="1990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="2420" />
+              <mxPoint x="170" y="1990" />
+              <mxPoint x="401" y="1990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-29" value="Result detected?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="275" y="2370" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-30" value="DONE" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2630" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-32" target="NKiWoUgMI4WtK5r3R0fM-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-32" value="1. Update info in tb dam chay SQL&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;=&amp;gt; insertSQL_tbDamchay()&lt;/div&gt;&lt;div&gt;2. Send email notification.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;=&amp;gt; send_email_Damchay()&lt;/div&gt;&lt;div&gt;3. gap send email at least 3 mintues.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="295" y="2500" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-34" target="NKiWoUgMI4WtK5r3R0fM-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-34" value="DetectFireInImages.loadImageFolder()&lt;div&gt;- Folder Image path&lt;/div&gt;&lt;div&gt;- Destination save result.&lt;/div&gt;&lt;div&gt;- Model trained.&lt;/div&gt;&lt;div&gt;- Input configuration&lt;/div&gt;&lt;div&gt;(ImagesDetector/DetectFireInImages.py)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;align=left;" vertex="1" parent="1">
+          <mxGeometry x="279.22" y="2010" width="241.56" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NKiWoUgMI4WtK5r3R0fM-36" target="NKiWoUgMI4WtK5r3R0fM-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-36" value="&lt;div style=&quot;&quot;&gt;1. Remove Augmented data images before.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2. Sorted latest 9 images.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;3. Threads to make output chunk of Augmented data&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;=&amp;gt; augment_chunk()&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;4. Threads inference inages in Augmented data&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;=&amp;gt; inference_images()&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="215.94" y="2170" width="369.37" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-37" value="True" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="2470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NKiWoUgMI4WtK5r3R0fM-38" value="False" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2390" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
