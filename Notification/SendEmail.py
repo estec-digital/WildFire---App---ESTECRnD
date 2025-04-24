@@ -82,6 +82,7 @@ def send_email(server,minutes_noti,imgName,count,kinhdo,vido,sender_email, sende
                     nameList.pop(0)
 
                 # print("  Email is being sent...", flush=True)
+                logger.info("Starting send Email ...")
 
                 # Tạo đối tượng email
                 msg = MIMEMultipart()

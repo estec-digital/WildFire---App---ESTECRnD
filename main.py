@@ -68,9 +68,9 @@ def detector(input_json_path):
 
     while True:
         try:
-            # with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-            #     #logger.info(f"DATA SENSOR running ...")
-            #     future = executor.submit(UpdateDataSensorByHour, input_json_path)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+                #logger.info(f"DATA SENSOR running ...")
+                future = executor.submit(UpdateDataSensorByHour, input_json_path)
 
             now = datetime.now()
             date_str = now.strftime("%Y-%m-%d")
@@ -147,7 +147,7 @@ def main():
 
     # load data sensor
     sensor_by_hour = start_sensor_by_hour_script()
-    # DataSensorCheck(input_json_path)
+    #DataSensorCheck(input_json_path)
     logger.info("SENSOR DATA SQL Working on data sensor done...")
 
     try:
@@ -196,18 +196,8 @@ def main():
             sensor_by_hour.send_signal(signal.CTRL_BREAK_EVENT)
             sensor_by_hour.wait()
             logger.info("[MAIN] Sensor by HOUR process terminated")
-
-    raise Exception("Something went wrong")
    
 
 if __name__ == "__main__":
     main()
-    # while True:
-    #     try:
-    #         main()
-    #     except Exception as e:
-    #         print("⚠️ Error occurred:", e)
-    #         traceback.print_exc()
-    #         print("⏳ Restarting in 5 seconds...\n")
-    #         time.sleep(5)
-
+   

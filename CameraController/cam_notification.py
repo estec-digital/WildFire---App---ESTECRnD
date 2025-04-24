@@ -4,7 +4,17 @@ import time, traceback
 from email.mime.text import MIMEText
 from datetime import datetime  
 import json
-import os
+import os, ctypes
+
+def disable_quick_edit():
+    if sys.platform == "win32":
+        import msvcrt
+        kernel32 = ctypes.windll.kernel32
+        hStdin = kernel32.GetStdHandle(-10)
+        mode = ctypes.c_uint()
+        kernel32.GetConsoleMode(hStdin, ctypes.byref(mode))
+        new_mode = mode.value & ~0x0040  # Disable ENABLE_QUICK_EDIT_MODE
+        kernel32.SetConsoleMode(hStdin, new_mode)
 
 def emailSenderReciever(json_path):
     if not os.path.exists(json_path):
@@ -42,7 +52,7 @@ logging.basicConfig(
     format='%(asctime)s %(levelname)s:%(message)s',
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("camera_service.log", encoding="utf-8", mode='a')
+        logging.FileHandler("camera_and_sql_service.log", encoding="utf-8", mode='a')
     ]
 )
 logger = logging.getLogger(__name__)
@@ -75,7 +85,9 @@ def send_email(subject, body):
 
     try:
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server.ehlo()
         server.starttls()
+        server.ehlo()
         server.login(EMAIL_SENDER, EMAIL_PASSWORD)
         server.sendmail(EMAIL_SENDER, EMAIL_RECEIVERS, msg.as_string())
         server.quit()
@@ -118,6 +130,7 @@ def check_website():
         last_status = "error"
 
 if __name__ == '__main__':
+    disable_quick_edit()
 
     #print("🕒 Script đang chạy, kiểm tra website mỗi 60 giây...")
     logger.info(f" System observing every 5 minutes")

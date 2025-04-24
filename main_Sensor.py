@@ -52,16 +52,6 @@ def main():
     # load data sensor
     DataSensorCheck(input_json_path)
     #logger.info("SENSOR DATA SQL Working on data sensor done...")
-    # Load config
-    with open(input_json_path, "r", encoding="utf-8") as f:
-        config = json.load(f)
-
-    log_file = config.get("log_data_sensor")
-
-    # Initialize logger
-    logger = LoggerSetup(log_file).get_logger()
-
-    logger.info(" Logger started from configuration")
 
     while True:
         try:

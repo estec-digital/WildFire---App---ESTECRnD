@@ -531,7 +531,6 @@ def DataSensorCheck(input_json_path):
         # deleteRecord()
         for i in range(len(df)):
             row = df.iloc[i]
-            
             # Kiểm tra dữ liệu tại mỗi dòng có đủ và không bị NaN
             if not pd.isna(row["P"]) and not pd.isna(row["NguyCo"]) and not pd.isna(row["NhietDo"]) and not pd.isna(row["DoAm"]):
                 insertKhiTuong1h(
